@@ -1,0 +1,18 @@
+{
+  "name": "@rts/context",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "types": "index.ts",
+  "author": "Miquel de Domingo i Giralt",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@rts/tsconfig": "*",
+    "@rts/eslint-config": "*",
+    "eslint": "7.32.0",
+    "typescript": "4.5.3"
+  }
+}

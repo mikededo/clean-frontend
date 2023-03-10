@@ -1,8 +1,8 @@
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
 import { users } from "@rts/context";
 
-import { useState } from "react";
-
-export default function Next() {
+export default function Vite() {
   const [user, setUser] = useState<users.User | null>(null);
 
   const fetchUserWithId = async (id: number) => {
@@ -28,3 +28,9 @@ export default function Next() {
     </div>
   );
 }
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <Vite />
+  </React.StrictMode>
+);

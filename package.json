@@ -10,10 +10,12 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start:server": "json-server --no-cors -p 5000 -H 127.0.0.1 db.json"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
+    "json-server": "0.17.2",
     "prettier": "latest",
     "turbo": "latest"
   },
